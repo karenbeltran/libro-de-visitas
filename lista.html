@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Libro de Visitas</title>
+    <link rel="stylesheet" type="text/css" href="libro.css" media="screen" />
+  </head>
+  <body>
+    <div class="titulo"></div>
+    <h1>Articulos</h1>
+    <p class="holaMundo">Hola karen</p>
+    <hr color="blue" size="3" width="1300">
+    <div class="nuevaHistoria"></div>
+    <p>Nuevo Comentario</p>
+    <hr>
+    <hr color="blue" size="10" width="1300">
+    <hr>
+    <div class="formulario"></div>
+    <p>Crear Comentario</p>
+    <button class="botones" id="grande" onclick="grande(); return false">Texto Grande</button>
+    <button class="botones" id="mediano" onclick="mediano(); return false">Texto Mediano</button>
+    <button class="botones" id="chico" onclick="chico(); return false">Texto Chico</button>
+    <button class="botones" id="color" onclick="colorLetra();">Color de Texto</button>
+    <button class="botones" id="fondo" onclick="colorFondo();">Color de Fondo</button>
+    <button class="botones" id="izquierda" onclick="izquierda();">Alinear Izquierda</button>
+    <button class="botones" id="centrar" onclick="centrar();">Centrar</button>
+    <button class="botones" id="derecha" onclick="derecha();">Alinear Derecha</button><br>
+      <br><textarea id="cajaDeTexto" oninput="comentar();"></textarea>
+      <hr>
+    <div class="contenido"></div>
+    <h1>Contenido</h1>
+    <p id="alineacion"><output id="mostrar" oninput="comentar();"></output></p><br>
+      <button id="enviar" onclick="enviar();">Enviar</button>
+      <p id="enviado"></p>
+    <script src="lista.js"></script>
+  </body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>:3</title>
+
+  </head>
+
+  <body>
+
+    <h1>Libro de visitas</h1>
+
+    <article id="contenedorDeComentarios">
+      <section style="font-size:24px;color:pink">Agrega un Comentario</section>
+    </article>
+
+    <hr>
+
+    <h3>Agregar Comentario</h3>
+
+    <button id="textoGrande" onclick="cambiarTextoGrande()" >Texto Grande</button>
+    <button id="textoMediano"  onclick="cambiarTextoMediano()" >Texto Mediano</button>
+    <button id="textoChico" onclick="cambiarTextoChico()" >Texto Chico</button>
+    <button id="colorTexto" onclick="colorTexto()" >Color Texto</button>
+    <button id="colorFondo" onclick="colorFondo()" >Color Fondo</button>
+    <button id="alinearIzquierda" onclick="alinearIzquierda()" >Alinear izquierda</button>
+    <button id="centrar" onclick="centrar()" >Centrar</button>
+    <button id="alinearDerecha" onclick="alinearDerecha()" >Alinear derecha</button>
+    <button id="agregarImagen " onclick="agregarImagen()">Agregar Imagen</button>
+    <button id="agregarLista" onclick="agregarLista()">Agregar lista</button>
+    <textarea oninput="crearPreview(this)" id="contenidoComentario" rows="8" cols="80"></textarea>
+    <hr>
+    <h3>Contenido</h3>
+    <section id="preview"></section>
+    <hr>
+    <button id="enviarComentario" onclick="enviarComentario()">Enviar</button>
+
+    <script src="lista.js"></script>
+  </body>
+</html> -->
